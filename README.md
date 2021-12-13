@@ -12,5 +12,8 @@ Curseforge download url parser using driver
 - Paste all download links like: ``https://www.curseforge.com/minecraft/mc-mods/potion-core/download/2905184``
 - Run the script: ``python cfhp.py``
 
+## Result
+The result of the script is saved in data directory which is placed in the main directory during first run, every data file has current time in the file name.
+
 ## Responsibility
 I don't take any responsibility for usage of this script. Anything done against the law is the users fault.
