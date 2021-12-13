@@ -27,7 +27,7 @@ def notJsonQuestionMark(loadedDict):
 def get_perf_log_on_load(url, headless=False, filter=None): #Headless does not work
     print("Executing driver on " + url)
     options = Options()
-    #options.add_experimental_option('w3c', False)
+    #options.add_experimental_option('w3c', False) # it threw a bunch of info and didn't give anything so i disabled it
     if headless:
         options.headless = headless
     options.add_argument('log-level=3')
