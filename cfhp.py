@@ -33,7 +33,7 @@ def get_perf_log_on_load(url, headless=False, filter=None): #Headless does not w
     options.add_argument('log-level=3')
     cap = DesiredCapabilities.CHROME
     cap["goog:loggingPrefs"] = {"performance": "ALL"}
-    driver = webdriver.Chrome(r".\chromedriver.exe", desired_capabilities=cap, options=options) ### installed
+    driver = webdriver.Chrome(r".\chromedriver.exe", desired_capabilities=cap, options=options)
     driver.get(url)
     log = driver.get_log("performance")
     if "https://media.forgecdn.net/files/" not in str(log):
