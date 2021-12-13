@@ -1,6 +1,10 @@
 # cf-parser
 Curseforge download url parser using driver
 
+## Used
+- Python version 3.10
+- Selenium
+
 ## Usage
 - Download driver executable and put it inside the main directory
 - ``pip install selenium``
