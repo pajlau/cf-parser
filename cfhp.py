@@ -58,10 +58,10 @@ def main():
             print("Url found: " + ln)
             result_to_save.append(ln + "\n")
     date = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
-    print(f"Saving data to filename_{date}.data")
-    with open(f"./data/filename_{date}.data", "w") as f:
+    print(f"Saving data to cf_{date}.data")
+    with open(f"./data/cf_{date}.data", "w") as f:
         f.write(''.join(result_to_save))
-    print(f"Data saved to filename_{date}.data")
+    print(f"Data saved to cf_{date}.data")
 
 
 main()
